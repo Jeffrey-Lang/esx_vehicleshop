@@ -38,6 +38,7 @@ CREATE TABLE `vehicle_sold` (
 );
 
 CREATE TABLE `owned_vehicles` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
 	`owner` varchar(22) NOT NULL,
 	`plate` varchar(12) NOT NULL,
 	`vehicle` longtext,
@@ -45,7 +46,7 @@ CREATE TABLE `owned_vehicles` (
 	`job` VARCHAR(20) NOT NULL,
 	`stored` TINYINT(1) NOT NULL DEFAULT '0',
 
-	PRIMARY KEY (`plate`)
+	PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `rented_vehicles` (
